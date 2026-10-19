@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="veiwport" content="width=device-width, intital-scale=1.0" />
+    <title>Growtime</title>
+    <link rel=""stylesheet" href="style.css" />
+</head>
+<body>
+    <header class="topbar">
+        <div class="brand">
+            <span class="brand-mark">🌱</span>
+            <h1>Growtime</h1>
+        </div>
+        <div class="topbar-right">
+            <div class="coin-pill" tittle="Coins">
+                <span class="coin-icon">🪙</span>
+                <span id="coin-balance">0</span>
+            </div>
+            <button id="account-button" class="ghost-button" type="button">Sign in</button>
+        </div>
+    </header>
+    <nav class="tabs" aria-label="Sections">
+        <button class="tab active" data-tab="garden" type="button">Garden</button>
+        <button class="tab active" data-tab="shop" type="button">Shop</button>
+        <button class="tab active" data-tab="achivements" type="button">Achivements</button>
+        <button class="tab active" data-tab="account" type="button">Account</button>
+    </nav>
+    <main>
+        <!--Garden-->
+        <section id="garden" class=""panel active" aria-labelledby="garden-heading">
+            <div class="panel-head">
+                <h2 id="garden-heading">Your garden</h2>
+                <p class="hint">Click an empty plot to plant a daisy. More plant types will arrive later.</p>    
+            </div>
+            <div id="inventory-strip" class="inventory-strip" aria-label="Inventory"></div>
+            <div id="garden-grid" class="garden-grid" aria-label="Garden plots"></div>
+        </section>
+        <!--Shop-->
+        <section id="shop" class="panel" aria-labelledby="shop-heading">
+            <div class="panel-head">
+                <h2 id="shop heading">Shop</h2>
+                <p class="hint">Buying is added later.</p>
+            </div>
+            <ul id="shop-list" class="shop-list"></ul>
+        </section>
+        <!--Achievements-->
+        <section id="achievements" class="panel" aria-labelledby="achievements-heading">
+            <div class="panel-head">
+                <h2 id="achievements-heading">Achievements</h2>
+                <p class="hint">Reward logic will be added later</p>
+            </div>
+            <ul id="achivements-list" class="achivement-list"></ul>
+        </section>
+        <!--Account-->
+        <section id="account" class="panel" aria-labelledby="account-heading">
+            <div class="panel-head">
+                <h2 id="account-heading">Account</h2>
+                <p class="hint">Hack Club sign in will be added later</p>
+            </div>
+            <div class="account-card">
+                <p class="account-state">You are not signed in.</p>
+                 <button class="primary-button" type="button" disabled>
+                    Sign in with Hack Club (coming soon)
+                 </button>
+            </div>
+        </section>
+    </main>
+    <footer class="foot">
+        <span>Growtime</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

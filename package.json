@@ -1,0 +1,11 @@
+{
+  "name": "growtime",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A small digital garden that grows while you are away.",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["game", "garden", "hackclub"],
+  "license": "MIT"
+}
